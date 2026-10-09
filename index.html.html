@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casino Ethereum Dapp</title>
+  <style>
+    body {
+      font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 40px 50px;
+      color: #333333;
+      background-color: #ffffff;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      color: #2c3e50;
+      margin-bottom: 25px;
+    }
+    .stats-block {
+      line-height: 1.8;
+      font-size: 15px;
+      color: #4f5b66;
+      margin-bottom: 35px;
+    }
+    .stats-block b {
+      color: #2c3e50;
+    }
+    .divider {
+      border-top: 1px solid #e1e8ed;
+      margin: 25px 0;
+    }
+    .section-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+    .bet-input-row {
+      font-size: 15px;
+      color: #333;
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .bet-input-row input {
+      width: 70px;
+      padding: 6px 10px;
+      font-size: 15px;
+      border: 1px solid #ccd6dd;
+      border-radius: 4px;
+      text-align: center;
+      outline: none;
+    }
+    .buttons-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin: 20px 0 35px 0;
+    }
+    .btn-number {
+      width: 58px;
+      height: 58px;
+      border: 2px solid #2196f3;
+      border-radius: 10px;
+      background-color: #ffffff;
+      color: #2196f3;
+      font-size: 20px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
+    .btn-number:hover {
+      background-color: #e3f2fd;
+    }
+    /* 对应官方文档中选中的蓝色高亮按钮 */
+    .btn-number.active {
+      background-color: #2196f3;
+      color: #ffffff;
+    }
+    .notice-block {
+      color: #8899a6;
+      font-size: 13px;
+      line-height: 1.7;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Bet for your best number and win huge amounts of Ether</h1>
+
+  <div class="stats-block">
+    Number of bets: <b>0</b><br />
+    Last number winner: <b>0</b><br />
+    Total ether bet: <b>0 ether</b><br />
+    Minimum bet: <b>0.1 ether</b><br />
+    Max amount of bets: <b>10</b>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title">Vote for the next number</div>
+
+  <div class="bet-input-row">
+    <span>How much Ether do you want to bet?</span>
+    <input type="text" value="0.1" />
+    <span>ether</span>
+  </div>
+
+  <div class="buttons-container">
+    <button class="btn-number">1</button>
+    <button class="btn-number active">2</button>
+    <button class="btn-number">3</button>
+    <button class="btn-number active">4</button>
+    <button class="btn-number">5</button>
+    <button class="btn-number">6</button>
+    <button class="btn-number">7</button>
+    <button class="btn-number">8</button>
+    <button class="btn-number">9</button>
+    <button class="btn-number">10</button>
+  </div>
+
+  <div class="notice-block">
+    Only working with the Ropsten / Sepolia Test Network<br />
+    You can only vote once per account<br />
+    Your vote will be reflected when the next block is mined
+  </div>
+
+</body>
+</html>
